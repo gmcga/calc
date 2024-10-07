@@ -1,0 +1,57 @@
+/* Handling of button layout */
+.calc-body {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 200px;
+    gap: 2%;
+    row-gap: 4px; /* should be 2% */
+    
+}
+.button {
+    width: 18%;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid black;
+    color: black;
+
+    cursor: pointer; /* Change cursor on hover */
+    transition: transform 0.1s ease;
+}
+/* Button responsiveness */
+.button:hover {
+    background-color: red;
+}
+.button:active {
+    transform: translateY(2px);
+}
+.digit {
+    background-color: lightgray;
+}
+.equals {
+    background-color: lightgreen;
+}
+.clear {
+    background-color: orange;
+}
+.operator {
+    background-color: bisque;
+}
+.screen {
+    height: 40px;
+    font-size: 24px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 98%; /* makes the scrren the same width as 
+    5 buttons + 4 gaps */
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: right;
+    margin: 0;
+    padding: 5px;
+    
+}
