@@ -32,9 +32,15 @@
 }
 .equals {
     background-color: lightgreen;
+    width: 38%;
 }
 .clear {
     background-color: orange;
+    width: 38%;
+}
+.del {
+    background-color: rgb(14, 255, 154);
+    width: 38%;
 }
 .operator {
     background-color: bisque;

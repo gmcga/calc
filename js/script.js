@@ -3,6 +3,7 @@ const equalsBtn = document.getElementById("equalsBtn");
 const clearBtn = document.getElementById("clearBtn");
 const digits = document.querySelectorAll(".digit");
 const operators = document.querySelectorAll(".operator");
+const delBtn = document.getElementById("delBtn");
 
 const max_len = 10;
 const operator_symbols = ["+", "-", "*", "/"];
@@ -49,6 +50,17 @@ equalsBtn.addEventListener("click", () => {
 // Clear button functionality
 clearBtn.addEventListener("click", () => {
     screen.textContent = "0";
+});
+
+// Del button functionality
+delBtn.addEventListener("click", () => {
+    // Remove the last character of the screen text content, or set to 0 if it's 1 char
+    if (screen.textContent.length <= 1) {
+        screen.textContent = "0";
+    }
+    else {
+        screen.textContent = screen.textContent.slice(0, -1);
+    }
 });
 
 
