@@ -1,6 +1,6 @@
 # calc
 
-Simple Calculator Web App
+Simple calculator web app made for fun/practice
 
 ## Description
 
